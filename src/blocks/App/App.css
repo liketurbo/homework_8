@@ -1,11 +1,8 @@
 .App {
-  text-align: center;
-}
+  width: 100%;
+  height: 100%;
 
-.App-Title {
-  font-size: 1.5em;
-}
-
-.App-Intro {
-  font-size: large;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: calc(2 * 6%) 1fr 6%;
 }
