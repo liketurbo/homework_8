@@ -29,12 +29,15 @@ export default decl({
           return { type: 'nopic' };
     }
   },
-  _render(props) {
-    
-  },
-  content() {
+  content({ type }) {
+    const { image, title } = this.props;
     return (
-      this._render()
+      <Fragment>
+        <Title />
+        {image ? <Picture src={image} alt={title} /> : ''}
+        <Description />
+        <Control />
+      </Fragment>
     );
   },
 });
