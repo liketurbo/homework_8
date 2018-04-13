@@ -29,14 +29,13 @@ export default decl({
           return { type: 'nopic' };
     }
   },
-  content({ type }) {
-    const { image, title } = this.props;
+  content() {
     return (
       <Fragment>
-        <Title />
-        {image ? <Picture src={image} alt={title} /> : ''}
-        <Description />
-        <Control />
+        <Title {...this.props} />
+        {this.props.image ? <Picture {...this.props} /> : ''}
+        <Description {...this.props} />
+        <Control {...this.props} />
       </Fragment>
     );
   },
