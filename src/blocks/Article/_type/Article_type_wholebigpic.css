@@ -1,6 +1,0 @@
-.Article_type_wholebigpic {
-  grid-column: span 6;
-
-  grid-template-rows: auto auto auto;
-  grid-template-columns: auto auto;
-}

@@ -1,8 +1,0 @@
-.App-Body { 
-  grid-row: 2;
-  grid-column: 3/11;
-
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem;
-}

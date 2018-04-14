@@ -1,9 +1,0 @@
-.App-Header {
-  grid-row: 1;
-  grid-column: 3/11;
-  
-  display: flex;
-  
-  justify-content: flex-start;
-  align-items: center;
-}
