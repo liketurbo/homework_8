@@ -1,5 +1,9 @@
+.Article-Control {
+  display: flex;
+}
+
 .Article-Control > button {
-  outline: 0;
+  outline-color: #d3d3d3;
   border: 0;
   background: 0;
   cursor: pointer;

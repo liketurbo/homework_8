@@ -6,6 +6,11 @@ html, body, #root {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  font-size: 15px;
+
+  font-family: "YS Text";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  
+  font-size: calc(15px + .25vw);
 }

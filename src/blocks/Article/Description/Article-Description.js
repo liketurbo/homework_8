@@ -10,6 +10,17 @@ export default decl({
   block: 'Article',
   elem: 'Description',
   tag: 'div',
+  didMount() {
+    const container = document.querySelector('.Article-Description');
+    const lines = container.querySelectorAll('.Article-Description > div');
+
+    const bottomLine = container.getBoundingClientRect().bottom;
+    for (const line of lines) {
+      if (line.getBoundingClientRect().bottom > bottomLine) {
+        container.removeChild(line);
+      }
+    }
+  },
   mods() {
     const { size, image } = this.props;
     
@@ -28,7 +39,11 @@ export default decl({
   content() {
     return (
       <Fragment>
-        {this.props.description}
+          {
+            this.props.image
+            ? this.props.description.slice(0, 100)
+            : this.props.description.slice(0, 200)
+          }
       </Fragment>
     );
   }

@@ -14,6 +14,9 @@ import 'm:type=nopic';
 export default decl({
   block: 'Article',
   tag: 'article',
+  didMount() {
+    
+  },
   mods({ type }) {
     const { size, image } = this.props;
     
@@ -30,11 +33,12 @@ export default decl({
     }
   },
   content() {
+    const { image, description } = this.props;
     return (
       <Fragment>
         <Title {...this.props} />
-        {this.props.image ? <Picture {...this.props} /> : ''}
-        <Description {...this.props} />
+        {image ? <Picture {...this.props} /> : ''}
+        {description ? <Description {...this.props} /> : ''}
         <Control {...this.props} />
       </Fragment>
     );

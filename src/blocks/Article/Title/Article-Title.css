@@ -1,3 +1,4 @@
 .Article-Title {
-  font-size: 1.2rem;
+  font-size: calc(1.2rem + .25vw);
+  margin: 0;
 }

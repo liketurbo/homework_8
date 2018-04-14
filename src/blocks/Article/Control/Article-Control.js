@@ -28,8 +28,8 @@ export default decl({
   content() {
     return (
       <Fragment>
-        <button>More</button>
-        <button>Like</button>
+        <button><img src={require('../../../images/Actions.png')} alt="More" /></button>
+        <button><img src={require('../../../images/Heart.png')} alt="Like" /></button>
       </Fragment>
     );
   }
